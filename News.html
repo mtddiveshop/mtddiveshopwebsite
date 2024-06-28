@@ -1,0 +1,927 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events- Malapascua Thresher Diving</title>
+    <link rel="shortcut icon" type="x-icon" href="images/mtd-logo.png">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    
+        @font-face {
+            font-family: Medium-font;
+            src: url(fonts/Poppins-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Regular-font;
+            src: url(fonts/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Title-font;
+            src: url(fonts/Poppins-Bold.ttf);
+        }
+
+        .navbar-custom {
+            background-color: transparent;
+            transition: background-color 0.4s;
+        }
+        .navbar-custom.scrolled {
+            background-color: #001e3d;
+        }
+        .content-section {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0;
+        }
+        .content-content {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .content-content h2 {
+            font-size: 48px;
+            font-family: Arial Black;
+        }
+
+        .content-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .banner-section {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0;
+        }
+        .banner-content {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .banner-content h2 {
+            font-size: 45px;
+            font-family: Arial Black;
+        }
+        .banner-section img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+        }
+
+        .navbar-lower {
+            margin-bottom: 20px; /* Adjust the margin bottom as needed */
+        }   
+        .navbar-upper, .navbar-lower {
+            background-color: transparent;
+        }
+        .navbar-upper .container, .navbar-lower .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-upper img {
+            height: 50px;
+        }
+        .navbar-upper .partner-logos img {
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .navbar-lower .navbar-nav .nav-link {
+            color: #fff;
+            font-family: Regular-font;
+        }
+        .navbar-lower .contact-us-btn {
+            background-color: transparent;
+            border: solid 2px white;
+            color: white;
+            margin-right: 130px ;
+            font-family: Regular-font;
+        }
+        .navbar-lower .social-icons a {
+            color: #fff;
+            margin-left: 10px;
+        }    
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 ;
+        }
+        
+        .contact-us-btn:hover {
+            background-color: #ffffff; 
+            border-color: #ffffff; 
+            color: black;
+        }
+
+        .inquire-now-btn{
+            margin-top: 20px;
+            background-color: transparent; 
+            border-color: #ffffff; 
+            color: rgb(255, 255, 255);
+            font: Regular-font;
+        }
+
+        .inquire-now-btn:hover {
+            background-color: #ffffff; 
+            border-color: #ffffff; 
+            color: black;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px; /* Adjust the font size as needed */
+            margin-right: 20px;
+        }
+        
+        .social-icons a i {
+            font-size: 20px; /* Adjust the icon size as needed */
+        }
+
+        .navbar-upper, .navbar-lower {
+            margin-top: 20px; /* Increase the margin between upper and lower nav */
+        }
+        
+
+        span .logotitle{
+            font: Arial Black;
+        }
+
+        @media (max-width: 575.98px) {
+            .navbar-custom {
+                background-color: #001e3d; 
+            }
+        }
+
+        .social-icons .fa-facebook-f:hover{
+            color:rgb(51, 69, 168);
+        }
+
+        .social-icons .fa-youtube:hover{
+            color:red;
+        }
+
+        .social-icons .fa-instagram:hover{
+            color:rgb(230, 6, 118);
+        }
+
+        .custom-shape-divider-bottom-1716038433 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        
+        .custom-shape-divider-bottom-1716038433 svg {
+            position: relative;
+            display: block;
+            width: calc(300% + 1.3px);
+            height: 76px;
+        }
+
+        .custom-shape-divider-bottom-1716038433 .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .logo-title {
+            font-family: Medium-font; 
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px
+        }
+
+        .about-section {
+            padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about-section .left-part,
+        .about-section .right-part {
+            flex: 1;
+            padding: 20px;
+        }
+        .about-section .left-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .about-section .right-part img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .about-title {
+            font-family: Medium-font;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .about-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #007bff; 
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        .about-content {
+            font-size: 1.2rem;
+        }
+
+        p{
+            text-align: justify;
+            font-family: Regular-font;
+        }
+
+        .malapascua-img{
+            border-radius: 8px;
+        }
+
+        .malapascua-img:hover{
+            border-radius: 8px;
+            transform: scale(1.02); 
+            transition: transform 0.6s ease-in-out; 
+        }
+
+        .showbiztxt{
+            color:white;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-custom:hover{
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .t2d-img{
+            border-radius: 5px;
+        }
+
+        .t2d-img:hover{
+            filter: brightness(60%);
+            transition: filter 0.3s ease;
+        }
+
+        .custom-shape-divider-top-1716048623 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape-divider-top-1716048623 svg {
+            position: relative;
+            display: block;
+            width: calc(300% + 1.3px);
+            height: 79px;
+        }
+
+        .custom-shape-divider-top-1716048623 .shape-fill {
+            fill: #FFFFFF
+        }
+
+        .fontdesign{
+            font-family: Medium-font;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .fontdesign::before,
+        .fontdesign::after {
+            content: "";
+            flex: 1;
+            border-bottom: 3px solid #007bff; 
+            margin: 0 10px; 
+        }
+
+        .offers-txt{
+            font: Medium-font;
+            font-size: 32px;
+            color:white;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .img-scale:hover{
+            transform: scale(1.1); 
+            transition: transform 0.3s ease; 
+        }
+        .section {
+        padding: 100px 0;
+        position: relative;
+        }
+        .gray-bg {
+            background-color: #ebf4fa;
+        }
+        /* Blog 
+        ---------------------*/
+        .blog-grid {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+        .blog-grid .blog-img {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        }
+        .blog-grid .blog-img .date {
+        position: absolute;
+        background: #3a3973;
+        color: #ffffff;
+        padding: 8px 15px;
+        left: 0;
+        top: 10px;
+        font-size: 14px;
+        }
+        .blog-grid .blog-info {
+        box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+        border-radius: 5px;
+        background: #ffffff;
+        padding: 20px;
+        margin: -30px 20px 0;
+        position: relative;
+        }
+        .blog-grid .blog-info h5 {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0 0 10px;
+        }
+        .blog-grid .blog-info h5 a {
+        color: #3a3973;
+        }
+        .blog-grid .blog-info p {
+        margin: 0;
+        }
+        .blog-grid .blog-info .btn-bar {
+        margin-top: 20px;
+        }
+
+        .px-btn-arrow {
+            padding: 0 50px 0 0;
+            line-height: 20px;
+            position: relative;
+            display: inline-block;
+            color: #fe4f6c;
+            -moz-transition: ease all 0.3s;
+            -o-transition: ease all 0.3s;
+            -webkit-transition: ease all 0.3s;
+            transition: ease all 0.3s;
+        }
+
+
+        .px-btn-arrow .arrow {
+            width: 13px;
+            height: 2px;
+            background: currentColor;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 25px;
+            -moz-transition: ease right 0.3s;
+            -o-transition: ease right 0.3s;
+            -webkit-transition: ease right 0.3s;
+            transition: ease right 0.3s;
+        }
+
+        .px-btn-arrow .arrow:after {
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid currentColor;
+            border-top: 2px solid currentColor;
+            content: "";
+            position: absolute;
+            top: -3px;
+            right: 0;
+            display: inline-block;
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .events-date {
+        text-align: center;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        background-color: rgba(25, 47, 89, 0.9);
+        color: #fff;
+        padding: 12px 20px 8px 20px;
+        text-transform: uppercase
+        }
+        .event-time li {
+            display: inline-block;
+            margin-right: 20px
+        }
+
+        .event-time li:last-child {
+            margin-right: 0
+        }
+
+        .event-time li i {
+            color: #59c17a
+        }
+
+        .event-block {
+            box-shadow: 0px 0px 16px 0px rgba(187, 187, 187, 0.48)
+        }
+
+        .event-block ul li i {
+            color: #59c17a
+        }
+
+        @media screen and (max-width: 1199px) {
+            .event-date {
+                padding: 10px 18px 6px 18px
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            .event-date {
+                padding: 8px 15px 4px 15px
+            }
+            .events-date {
+                padding: 10px 15px 6px 15px
+            }
+        }
+
+        .position-relative {
+            position: relative !important;
+        }
+
+        .margin-40px-bottom {
+            margin-bottom: 40px;
+        }
+        .padding-60px-lr {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .margin-15px-bottom {
+            margin-bottom: 15px;
+        }
+        .font-weight-500 {
+            font-weight: 500;
+        }
+        .font-size22 {
+            font-size: 22px;
+        }
+        .text-theme-color {
+            color: #192f59;
+        }
+        .margin-10px-bottom {
+            margin-bottom: 10px;
+        }
+        .margin-10px-right {
+            margin-right: 10px;
+        }
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+      }
+      .footer {
+        background-color: #174677;
+        padding: 70px 0;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col h4 {
+        font-size: 18px;
+        font-family: Regular-Font;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .footer-col ul li a {
+        font-size: 16px;
+        font-family: Regular-Font;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+      }
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a {
+        padding-top: 10;
+
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+
+      /*responsive*/
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 574px) {
+        .footer-col {
+          width: 100%;
+        }
+      }
+
+      .blog-info h5{
+        font-family: Title-font;
+      }
+
+      .blog-info p{
+        font-family: Regular-font;
+      }
+    </style>
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1b0d08e2-1e7d-4ea2-9492-e3f0c4e38cdf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-12 d-flex justify-content-between align-items-center navbar-upper py-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex align-items-center">
+                        <img src="images/mtd-logo.png" STYLE="width: 120px; height: 120px;">
+                        <span class="ms-2 text-white fs-4"><div class="logo-title">MALAPASCUA THRESHER DIVESHOP</div></span>
+                    </div>
+                    <div class="partner-logos d-none d-lg-flex"> 
+                        <a href="https://www.divessi.com/en/divecenter/763217"><img src="images/partnership.png" class="me-2 img-scale"></a>
+                        <a href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"><img src="images/partnership2.png" class="img-scale"></a>
+                    </div>
+                </div>
+     
+                <div class="col-12 navbar-lower">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="AboutMTD.html">About MTD</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnels</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ProductsServices.html">Products & Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Reviews.html">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="News.html" style="color: #ffc107;">News & Events</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                                <a href="Contact.html" class="btn contact-us-btn me-2" type="button">Contact Us</a>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/MTDpurelocal" class="me-2"><i class="fab fa-facebook-f"></i></a> 
+                                    <a href="https://www.instagram.com/mtddiveshop/" class="me-2"><i class="fab fa-instagram"></i></a> 
+                                    <a href="https://www.youtube.com/@jestondayday63"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section class="banner-section">
+        <img src="images/bgnews.png">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-content text-center">
+                        <h2><br><br>NEWS & EVENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="custom-shape-divider-bottom-1716038433">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title">
+                        <h2 class="fontdesign">Latest News</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">04 FEB</div>
+                            <a href="#">
+                                <img src="images/news1.jpg" title="" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-info">
+                            <h5>2024 LOW SEASON DIVE PROMO</h5>
+                            <p>For more information, and clarifications, please don’t hesitate to contact us via social media Thank you!</p>
+                            <div class="btn-bar">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">04 FEB</div>
+                            <a href="#">
+                                <img src="images/news2.jpg" title="" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-info">
+                            <h5>MTD FAMILY IS GETTING BIGGER AND STRONGER</h5>
+                            <p>THE MAIN MAN OF ALL OUR SUCCESS CONGRATULATIONS TEAM. </p>
+                            <P>THANK YOU ALL</P>
+                            <div class="btn-bar">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">04 FEB</div>
+                            <a href="#">
+                                <img src="images/news7.jpg" title="" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-info">
+                            <h5>SCUBA SCHOOL INTERNATIONAL</h5>
+                            <p>MTD DIVESHOP Recognized as a Excellent Service Dive Center Thank you so much for the recognition.</p>
+                            <div class="btn-bar">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<div class="container">
+    
+    <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+        <div class="col-lg-5 col-sm-12">
+            <div class="position-relative">
+                <img src="images/events1.jpg" alt="">
+                <div class="events-date">
+                    <div class="font-size28">18</div>
+                    <div class="font-size14">FEB</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500 mt-4" style="font-family: Regular-font; font-weight: bold;"> Epic Diving Squires Sports Philippines x MTD Diveshop.</h5>
+                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                    <li><i class="far fa-clock margin-10px-right"></i> Febuary 18</li>
+                    
+                </ul>
+                <p style="font-family: Regular-font;">Short but sweet, it's a wrap! 2 Epic Diving Squires Sports Philippines x MTD Diveshop.
+                    Thanks for trusting and Choosing MTD Diveshop Malapascua Pure Local Dive Center Your Ocean Pilot. </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+        <div class="col-lg-7 order-2 order-lg-1">
+            <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500 mt-4" style="font-family: Regular-font; font-weight: bold;">CONGRATULATIONS 👏 🎉
+                    STEVE & HEIDI ❤️ THE NEW RECORD OF MTD</h5>
+                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                    <li><i class="far fa-clock margin-10px-right"></i>December 13</li>
+                    
+                </ul>
+                <p style="font-family: Regular-font;">We are very happy to And blessefull and thanks for sharing your blessings to us and we will always remember this moment and days we made here in Malapascua Island.</p>
+                
+            </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2">
+            <div class="position-relative">
+                <img src="images/events2.jpg" alt="">
+                <div class="events-date">
+                    <div class="font-size28">13</div>
+                    <div class="font-size14">Dec</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end event block -->
+
+    <!-- start event block -->
+    <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+        <div class="col-lg-5 col-sm-12">
+            <div class="position-relative">
+                <img src="images/events3.jpg" alt="">
+                <div class="events-date">
+                    <div class="font-size28">3</div>
+                    <div class="font-size14">MAR</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500 mt-4" style="font-family: Regular-font; font-weight: bold;">Mares Northern Divers Visit</h5>
+                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                    <li><i class="far fa-clock margin-10px-right"></i>March 3</li>
+                    
+                </ul>
+                <p>Safe Diving! Awesome Vibes! Awesome People! Awesome Diving!
+
+                    Thanks Tepanee Beach Resort</p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- end event block -->
+
+   
+
+</div>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;company</h4>
+          <a class="navbar-brand" href="#">
+            <img src="images/mtd-logo.png" alt="CNN Logo" width="150" />
+          </a>
+          <br /><br /><br />
+          <a
+            class="navbar-brand"
+            href="https://www.divessi.com/en/divecenter/763217"
+          >
+            <img src="images/partnership.png" alt="CNN Logo" width="150" />
+          </a>
+          <br /><br /><br />
+          <a
+            class="navbar-brand"
+            href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"
+          >
+            <img src="images/partnership2.png" alt="CNN Logo" width="150" />
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>&nbsp;&nbsp;&nbsp;&nbsp;About MTD</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Personnel</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Products & Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/MTDpurelocal"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/mtddiveshop/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/@jestondayday63"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+  </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+</body>
+
+</html>

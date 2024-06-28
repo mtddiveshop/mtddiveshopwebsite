@@ -1,0 +1,1297 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product & Services - Malapascua Thresher Diving</title>
+    <link rel="shortcut icon" type="x-icon" href="images/mtd-logo.png">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        @font-face {
+            font-family: Medium-font;
+            src: url(fonts/Poppins-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Regular-font;
+            src: url(fonts/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Title-font;
+            src: url(fonts/Poppins-Bold.ttf)
+        }
+
+        .navbar-custom{
+            background-color: transparent;
+            transition: background-color 0.4s;
+        }
+        .navbar-custom.scrolled{
+            background-color: #001e3d;
+        }
+        .content-section{
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0;
+        }
+        .content-content {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .content-content h2 {
+            font-size: 48px;
+            font-family: Arial Black;
+        }
+
+        .content-section video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .banner-section{
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0;
+        }
+        .banner-content{
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .banner-content h2{
+            font-size: 45px;
+            font-family: Arial Black;
+        }
+        .banner-section img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+        }
+
+        .navbar-lower{
+            margin-bottom: 20px; 
+        }   
+        .navbar-upper, .navbar-lower{
+            background-color: transparent;
+        }
+        .navbar-upper .container, .navbar-lower .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-upper img{
+            height: 50px;
+        }
+        .navbar-upper .partner-logos img{
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .navbar-lower .navbar-nav .nav-link{
+            color: #fff;
+            font-family: Regular-font;
+        }
+
+        .navbar-lower .contact-us-btn{
+            background-color: transparent;
+            border: solid 2px white;
+            color: white;
+            margin-right: 130px ;
+            font-family: Regular-font;
+        }
+
+        .navbar-lower .social-icons a{
+            color: #fff;
+            margin-left: 10px;
+        }    
+
+        .navbar-nav .nav-link:hover{
+            color: #ffc107 ;
+        }
+        
+        .contact-us-btn:hover{
+            background-color: #ffffff; 
+            border-color: #ffffff; 
+            color: black;
+        }
+
+        .inquire-now-btn{
+            margin-top: 20px;
+            background-color: transparent; 
+            border-color: #ffffff; 
+            color: rgb(255, 255, 255);
+            font: Regular-font;
+        }
+
+        .inquire-now-btn:hover{
+            background-color: #ffffff; 
+            border-color: #ffffff; 
+            color: black;
+        }
+
+        .navbar-nav .nav-link{
+            font-size: 18px; 
+            margin-right: 20px;
+        }
+        
+        .social-icons a i {
+            font-size: 20px; 
+        }
+
+        .navbar-upper, .navbar-lower {
+            margin-top: 20px; 
+        }
+        
+
+        span .logotitle{
+            font: Arial Black;
+        }
+
+        @media (max-width: 575.98px){
+            .navbar-custom {
+                background-color: #001e3d; 
+            }
+        }
+
+        .social-icons .fa-facebook-f:hover{
+            color:rgb(51, 69, 168);
+        }
+
+        .social-icons .fa-youtube:hover{
+            color:red;
+        }
+
+        .social-icons .fa-instagram:hover{
+            color:rgb(230, 6, 118);
+        }
+
+        .custom-shape-divider-bottom-1716206127{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        
+        .custom-shape-divider-bottom-1716206127 svg{
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 101px;
+        }
+        
+        .custom-shape-divider-bottom-1716206127 .shape-fill{
+            fill: #FFFFFF;
+        }
+
+        .logo-title{
+            font-family: Medium-font; 
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px
+        }
+
+        p{
+            text-align: justify;
+            font-family: Regular-font;
+        }
+
+        .text-custom:hover{
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .t2d-img{
+            border-radius: 5px;
+        }
+
+        .t2d-img:hover{
+            filter: brightness(60%);
+            transition: filter 0.3s ease;
+        }
+
+        .fontdesign{
+            font-family: Medium-font;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .fontdesign::before,
+        .fontdesign::after{
+            content: "";
+            flex: 1;
+            border-bottom: 3px solid #007bff; 
+            margin: 0 10px; 
+        }
+
+        .package-card {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+
+        .package-card:hover {
+            transform: scale(1.05);
+        }
+
+        .package-card h4 {
+            font-size: 1.25rem;
+            font-family: Medium-font;
+            text-align: start;
+            margin-bottom: 15px;
+        }
+
+        .package-card h5 {
+            font-size: 1.5rem;
+            text-align: start;
+            font-weight: bold;
+            font-family: Medium-font;
+            margin-bottom: 15px;
+        }
+
+        .package-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .package-card ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            position: relative;
+            font-family: Regular-font;
+        }
+
+        .modal-body ul {
+            list-style: none;
+        }
+
+        .modal-body ul li {
+            font-family: Regular-font;
+        }
+
+        .modal-body ul li::before {
+            content: '✅';
+            margin-right: 10px;
+            color: green;
+        }
+
+        .package-card ul li::before {
+            content: '✅';
+            margin-right: 10px;
+            color: green;
+        }
+
+        .package-card ul li.not-available::before {
+            content: '❌';
+            margin-right: 10px;
+            color: red;
+        }
+
+        .package-card ul li .eye-icon {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .package-card ul li .overlay-image {
+            display: none;
+            position: absolute;
+            top: -180px;
+            left: 50px;
+            width: 300px;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .package-card ul li:hover .overlay-image {
+            display: block;
+        }
+
+        .cart-icon{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .package-card .btn-group {
+            width: 100%; /* Make the button group full width */
+        }
+
+        .package-card .btn-group .btn {
+            width: 100%; /* Make the button inside full width */
+        }
+
+        .cart-icon .fa-shopping-cart {
+            font-size: 24px;
+        }
+
+        .cart-content {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 300px;
+            max-height: 400px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            overflow-y: auto;
+            z-index: 999;
+        }
+
+        .img-scale:hover{
+            transform: scale(1.1); 
+            transition: transform 0.4s ease; 
+        }
+
+        .cart-content.active {
+            display: block;
+        }
+
+        .cart-content h4 {
+            margin-bottom: 10px;
+        }
+
+        .cart-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cart-content ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .card-title{
+            font-family: Title-font;
+        }
+
+        .cart-text{
+            font-family: Regular-font;  
+        }
+
+        .card {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .island-tour{
+            font-family: Medium-font;
+        }
+
+        .about-title {
+            font-family: Medium-font;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .about-title::after {
+            content: '';
+            width: 70px;
+            height: 4px;
+            background: #007bff; 
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .btn{
+            font-family: Regular-font;
+        }
+
+        .media-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .media-container img, .media-container video {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .media-container img {
+            transform: scale(1);
+        }
+
+        .media-container:hover img {
+            transform: scale(1.05);
+        }
+        .cart-icon .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+            display: none; 
+        }
+
+        .cart-icon:hover {
+            animation: shake 0.5s;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            transform: scale(1);
+
+        }
+
+        .product-card:hover{
+            transform: scale(1.03);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            
+            border-radius: 8px;
+        }
+        .product-card h5 {
+            font-size: 1.25rem;
+            font-family: Regular-font;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-card .price {
+            font-size: 1.5rem;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .product-card .btn {
+            margin-top: 10px;
+        }
+        
+        .space-section{
+            margin-top: 40px; 
+             margin-bottom: 40px; 
+        }
+        
+        .animated-border:hover{
+            border-color: #007bff;
+        }
+
+        .sold-out {
+            opacity: 0.6;
+            background-color: #f8d7da;
+        }
+        
+        .sold-out .add-to-cart {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px; 
+            background-color: #007bff; 
+            margin: 20px 0; 
+        }
+
+        body {
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+       }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+      }
+      .footer {
+        background-color: #174677;
+        padding: 70px 0;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+      }
+      
+      .footer-col h4 {
+        font-size: 18px;
+        font-family: Regular-font;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        font-size: 16px;
+        font-family: Regular-font;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+      }
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a {
+        padding-top: 10;
+
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+
+      /*responsive*/
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 574px) {
+        .footer-col {
+          width: 100%;
+        }
+      }
+
+      .sold-out .product-details::before {
+        content: 'Sold Out';
+        color: white;
+        background-color: red;
+        font-size: 32px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 5px;
+        z-index: 10;
+      }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-12 d-flex justify-content-between align-items-center navbar-upper py-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex align-items-center">
+                        <img src="images/mtd-logo.png" STYLE="width: 120px; height: 120px;">
+                        <span class="ms-2 text-white fs-4"><div class="logo-title">MALAPASCUA THRESHER DIVESHOP</div></span>
+                    </div>
+                    <div class="partner-logos d-none d-lg-flex"> 
+                        <a href="https://www.divessi.com/en/divecenter/763217"><img src="images/partnership.png" class="me-2 img-scale"></a>
+                        <a href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"><img src="images/partnership2.png" class="img-scale"></a>
+                    </div>
+                </div>
+     
+                <div class="col-12 navbar-lower">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="AboutMTD.html">About MTD</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnels</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ProductsServices.html" style="color: #ffc107 ;">Products & Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Reviews.html">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="News.html">News & Events</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                                <a href="Contact.html" class="btn contact-us-btn me-2" type="button">Contact Us</a>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/MTDpurelocal" class="me-2"><i class="fab fa-facebook-f"></i></a> 
+                                    <a href="https://www.instagram.com/mtddiveshop/" class="me-2"><i class="fab fa-instagram"></i></a> 
+                                    <a href="https://www.youtube.com/@jestondayday63"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section class="banner-section">
+        <img src="images/bg-product.png">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-content text-center">
+                        <h2><br><br>START YOUR DIVING EXPERIENCE WITH US</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="custom-shape-divider-bottom-1716206127">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container mt-5 diving-section">
+        <h2 class="text-center mb-5 diving-packages fontdesign">Diving Packages</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="package-card text-center">
+                    <h4>1 day / 3 Dive</h4>
+                    <h5>₱ 3,549</h5>
+                    <ul style="text-align: center;">
+                        <li>Malapascua Beach Access</li>
+                        <li><strong>Good for 1 Pax only</strong></li>
+                        <li class="not-available">Hotel Rooms</li>
+                        <li class="not-available">Equipments</li>
+                        <li>3 Boat Dives</li>
+                        <li>Equipments</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary add-to-cart" style="font-family: Regular-font;"><i class="fas fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="package-card text-center">
+                    <h4>3 Days / 5 Dive (Each day)</h4>
+                    <h5>₱ 12,549</h5>
+                    <ul>
+                        <li>Malapascua Beach Access</li>
+                        <li><strong>Good for 1 Pax only</strong></li>
+                        <li>
+                            Small Room with Aircon
+                            <span class="eye-icon" data-toggle="tooltip" data-placement="top" title="View Room">
+                                <i class="fa-solid fa-eye" style="color: #000000;"></i>
+                            </span>
+                            <img src="images/room1.png" class="overlay-image" alt="Queen Size Room">
+                        </li>
+                        <li class="not-available">Equipments</li>
+                        <li>5 Boat Dives</li>
+                        <li>Marine Park Fees</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary add-to-cart" style="font-family: Regular-font;"><i class="fas fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="package-card text-center">
+                    <h4>7 Days / 10 Dive (Each Day)</h5>
+                    <h5 >₱ 23,549</h5>
+                    <ul>
+                        <li>Malapascua Beach Access</li>
+                        <li><strong>Good for 1 Pax only</strong></li>
+                        <li>
+                            Large Room with Aircon
+                            <span class="eye-icon" data-toggle="tooltip" data-placement="top" title="View Room">
+                                <i class="fa-solid fa-eye" style="color: #000000;"></i>
+                            </span>
+                            <img src="images/room3.png" class="overlay-image" alt="Queen Size Room">
+                        </li>
+                        <li>Equipments</li>
+                        <li>10 Boat Dives</li>
+                        <li>Marine Park Fees</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary add-to-cart" style="font-family: Regular-font;"><i class="fas fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 hotel&islandtour-section">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2 class="about-title mt-3">Hotel Rooms</h2>
+                <div class="card">
+                    <img src="images/room1.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Regular-font; font-weight: bold;">Cozy Retreat - <i class="fa-solid fa-person"></i> 2-3 Pax</h5>
+                        <h5 class="price" style="font-family: Regular-font; font-weight: bold;">₱ 999</h5>
+                        <p class="card-text" style="font-family: Regular-font;">Enjoy cozy comfort in our small room, perfect for accommodating 2 to 3 people. 
+                        Experience a peaceful retreat with modern amenities and stylish decor. Whether you're traveling solo,
+                        as a couple, or with a small group of friends or family, this room offers everything you need for a comfortable stay.</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <img src="images/room2.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Regular-font; font-weight: bold;">Family Oasis - <i class="fa-solid fa-person"></i> 4-6 Pax</h5>
+                        <h5 class="price" style="font-family: Regular-font; font-weight: bold;">₱ 1,599</h5>
+                        <p class="card-text">Step into spacious elegance with our medium-sized room, designed to accommodate 4 to 6 guests. Revel
+                             in ample space and contemporary design, ideal for families or groups traveling together. With comfortable furnishings 
+                             and thoughtful amenities, this room ensures a relaxing and enjoyable stay for all.</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <img src="images/room3.png" class="card-img-top">
+                    <div class="card-body">
+                        
+                        <h5 class="card-title" style="font-family: Regular-font; font-weight: bold;">Grand Suite - <i class="fa-solid fa-person"></i> 6-8 Pax</h5>
+                        <h5 class="price" style="font-family: Regular-font; font-weight: bold;">₱ 1,999</h5>
+                        <p class="card-text">Indulge in luxury and space in our large room, tailored for groups of 6 to 8 guests seeking unparalleled comfort.
+                             Spread out and unwind in style, with generous living areas and upscale amenities. Whether you're traveling with extended family 
+                             or a group of friends, this room offers the ultimate retreat for a memorable stay.</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 island-section">
+                <h2 class="about-title mt-3">Island Tour</h2>
+                <div class="mt-4">
+                    <!-- Additional content or promotional material can be added here -->
+                    <h3 class="island-tour" style="font-family: Regular-font;">Special Offer!</h3>
+                    <p style="font-family: Regular-font;"><i>Book between May 20-31 and get a complimentary breakfast during your trip!</i></p>
+                    <div class="text-center">
+                        <h2></h2>
+                        <div class="media-container" data-video="videeos/sharkseeing.mp4">
+                        <img src="images/island1.png" class="img-fluid">
+                       </div>
+                        <button type="button" class="btn btn-info mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" style="font-family: Regular-font;">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <div class="media-container" data-video="videeos/sharkseeing.mp4">
+                        <img src="images/island2.png" class="img-fluid">
+                        </div>
+                        <button type="button" class="btn btn-info mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" style="font-family: Regular-font;">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <div class="media-container" data-video="videeos/sharkseeing.mp4">
+                        <img src="images/island3.png" class="img-fluid">
+                        </div>
+                        <button type="button" class="btn btn-info mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="font-family: Regular-font;">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <div class="media-container" data-video="videeos/sharkseeing.mp4">
+                        <img src="images/island4.png" class="img-fluid">
+                        </div>
+                        <button type="button" class="btn btn-info mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style="font-family: Regular-font;">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Olango Island Tour</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>₱ 12,000</h4>
+                <h5>Inclusions:</h5>
+                <ul>
+                    <li>Round-Trip Boat</li>
+                    <li>Good for 3-5 Pax</li>
+                    <li>Guided Island Tour</li>
+                    <li>Snorkeling Gear</li>
+                    <li>Kayaking</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Dona Marilyn Wreck Ship Tour</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>₱ 6,000</h4>
+                <h5>Inclusions:</h5>
+                <ul>
+                    <li>Round-Trip Boat</li>
+                    <li>Good for 3-5 Pax</li>
+                    <li>Guided Island Tour</li>
+                    <li>Snorkeling Gear</li>
+                    <li>Diving</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Capitancillo Island Tour</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>₱ 15,000</h4>
+                <h5>Inclusions:</h5>
+                <ul>
+                    <li>Round-Trip Boat</li>
+                    <li>Good for 3-5 Pax</li>
+                    <li>Guided Island Tour</li>
+                    <li>Snorkeling Gear</li>
+                    <li>Kayaking</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Kalanggaman Island Tour</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>₱ 12,000</h4>
+                <h5>Inclusions:</h5>
+                <ul>
+                    <li>Round-Trip Boat</li>
+                    <li>Good for 3-5 Pax</li>
+                    <li>Guided Island Tour</li>
+                    <li>Snorkeling Gear</li>
+                    <li>Zipline Adventure</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <section class="container mt-5">
+        <h2 class="text-center mb-5 diving-packages fontdesign">Rental Equipments</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/divegear.png">
+                    <h4 style="font-family: Regular-font;">Full Diving Gear</h4>
+                    <h5>₱ 1,050</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/torch.png">
+                    <h4 style="font-family: Regular-font;">Torch</h4>
+                    <h5>₱ 250</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/regulator.png">
+                    <h4 style="font-family: Regular-font;">Regulator</h4>
+                    <h5> ₱250</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/bcd.png">
+                    <h4 style="font-family: Regular-font;">BCD</h4>
+                    <h5>₱ 250</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/maskfins.png">
+                    <h4 style="font-family: Regular-font;">Mask & Fins</h4>
+                    <h5>₱ 150</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/wetsuit.png">
+                    <h4 style="font-family: Regular-font;">Wetsuit</h4>
+                    <h5>₱ 150</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/go pro.png">
+                    <h4 style="font-family: Regular-font;">Go Pro</h4>
+                    <h5>₱ 1000</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/dive computer.png">
+                    <h4 style="font-family: Regular-font;">Dive Computer</h4>
+                    <h5>₱ 500</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/gloves.png">
+                    <h4 style="font-family: Regular-font;">Scuba Gloves</h4>
+                    <h5>₱ 100</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/metal.png">
+                    <h4 style="font-family: Regular-font;">Pressure Gauge</h4>
+                    <h5>₱ 100</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card sold-out">
+                    <img src="images/12L.png">
+                    <h4 style="font-family: Regular-font;">Nitrox Tank (12 L)</h4>
+                    <h5>₱ 400</h5>
+                    <button class="btn btn-primary" disabled>Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card animated-border">
+                    <img src="images/15L.png">
+                    <h4 style="font-family: Regular-font;" >Nitrox Tank (15 L)</h4>
+                    <h5>₱ 500</h5>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="divider"></div>
+    <section class="container mt-5 mb-5">
+
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-2">
+                <img src="images/visa.png" class="img-fluid mb-3">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="images/mastercard.png" class="img-fluid mb-3 payment-logo">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="images/gcash (2).png" class="img-fluid mb-3 payment-logo">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="images/gpay.png" class="img-fluid mb-3 payment-logo">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="images/paypal.png" class="img-fluid mb-3 payment-logo">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company</h4>
+              <a class="navbar-brand" href="#">
+                <img src="images/mtd-logo.png" alt="CNN Logo" width="150" />
+              </a>
+              <br /><br /><br />
+              <a
+                class="navbar-brand"
+                href="https://www.divessi.com/en/divecenter/763217"
+              >
+                <img src="images/partnership.png" alt="CNN Logo" width="150" />
+              </a>
+              <br /><br /><br />
+              <a
+                class="navbar-brand"
+                href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"
+              >
+                <img src="images/partnership2.png" alt="CNN Logo" width="150" />
+              </a>
+            </div>
+            <div class="footer-col">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;About MTD</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Personnel</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Products & Services</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/MTDpurelocal"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/mtddiveshop/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@jestondayday63"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br/><br/>
+      </footer>
+
+
+    <div class="cart-icon" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge" id="cart-badge">0</span>
+    </div>
+    <div class="cart-content">
+        <h4>Shopping Cart</h4>
+        <ul id="cart-items">
+          
+        </ul>
+        <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+    </div>
+    
+
+<script>
+
+       window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+    
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        const card = button.closest('.product-card') || button.closest('.card-body') || button.closest('.package-card');
+        const itemName = card.querySelector('.product-name')?.textContent || card.querySelector('.card-title')?.textContent || card.querySelector('h4')?.textContent;
+        const itemPrice = card.querySelector('.product-price')?.textContent.replace('₱', '').replace('/Night', '') || card.querySelector('.price')?.textContent.replace('₱', '').replace('/Night', '') || card.querySelector('h5')?.textContent.replace('₱', '').replace('/Night', '');
+        addToCart(itemName, itemPrice);
+    });
+});
+
+let cartItems = [];
+
+function addToCart(itemName, itemPrice) {
+    const item = { name: itemName, price: itemPrice };
+    cartItems.push(item);
+    updateCartDisplay();
+}
+
+function toggleCart() {
+    const cartContent = document.querySelector('.cart-content');
+    cartContent.classList.toggle('active');
+}
+
+function updateCartDisplay() {
+    const cartItemsList = document.getElementById('cart-items');
+    const cartBadge = document.getElementById('cart-badge');
+    cartItemsList.innerHTML = '';
+
+    if (cartItems.length === 0) {
+        const emptyMessage = document.createElement('li');
+        emptyMessage.textContent = 'No items in the cart';
+        emptyMessage.id = 'empty-message';
+        cartItemsList.appendChild(emptyMessage);
+        cartBadge.style.display = 'none';
+    } else {
+        cartItems.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${item.name} - ₱${item.price}`;
+            cartItemsList.appendChild(listItem);
+
+            // Add remove button for each item
+            const removeButton = document.createElement('button');
+            removeButton.textContent = '❌';
+            removeButton.className = 'remove-item';
+            removeButton.addEventListener('click', () => {
+                removeFromCart(index);
+            });
+            listItem.appendChild(removeButton);
+        });
+        cartBadge.textContent = cartItems.length;
+        cartBadge.style.display = 'inline';
+    }
+}
+
+function removeFromCart(index) {
+    cartItems.splice(index, 1);
+    updateCartDisplay();
+}
+
+function checkout() {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    window.location.href = 'checkout.html';
+}
+
+updateCartDisplay();
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

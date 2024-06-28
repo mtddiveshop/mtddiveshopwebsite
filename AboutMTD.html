@@ -1,0 +1,933 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us - Malapascua Thresher Diving</title>
+    <link rel="shortcut icon" type="x-icon" href="images/mtd-logo.png" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1b0d08e2-1e7d-4ea2-9492-e3f0c4e38cdf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @font-face {
+        font-family: Medium-font;
+        src: url(fonts/Poppins-Medium.ttf);
+      }
+
+      @font-face {
+        font-family: Regular-font;
+        src: url(fonts/Poppins-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: Title-font;
+        src: url(fonts/Poppins-ME.ttf);
+      }
+
+      .navbar-custom {
+        background-color: transparent;
+        transition: background-color 0.4s;
+      }
+      .navbar-custom.scrolled {
+        background-color: #001e3d;
+      }
+      .content-section {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 0;
+      }
+      .content-content {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      .content-content h2 {
+        font-size: 48px;
+        font-family: Arial Black;
+      }
+
+      .content-section video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .banner-section {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 0;
+      }
+      .banner-content {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      .banner-content h2 {
+        font-size: 45px;
+        font-family: Arial Black;
+      }
+      .banner-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0) 70%
+        );
+        z-index: 1;
+      }
+
+      .navbar-lower {
+        margin-bottom: 20px; 
+      }
+      .navbar-upper,
+      .navbar-lower {
+        background-color: transparent;
+      }
+      .navbar-upper .container,
+      .navbar-lower .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-upper img {
+        height: 50px;
+      }
+      .navbar-upper .partner-logos img {
+        height: 30px;
+        margin-left: 10px;
+      }
+
+      .navbar-lower .navbar-nav .nav-link {
+        font-family: Regular-font;
+        color: #fff;
+      }
+      .navbar-lower .contact-us-btn {
+        background-color: transparent;
+        border: solid 2px white;
+        color: white;
+        margin-right: 130px;
+        font-family: Regular-font;
+
+      }
+      .navbar-lower .social-icons a {
+        color: #fff;
+        margin-left: 10px;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #ffc107;
+      }
+
+      .contact-us-btn:hover {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: black;
+      }
+
+      .inquire-now-btn {
+        margin-top: 20px;
+        background-color: transparent;
+        border-color: #ffffff;
+        color: rgb(255, 255, 255);
+        font: Regular-font;
+      }
+
+      .inquire-now-btn:hover {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: black;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 18px; 
+        margin-right: 20px;
+      }
+
+      .social-icons a i {
+        font-size: 20px; 
+      }
+
+      .navbar-upper,
+      .navbar-lower {
+        margin-top: 20px; 
+      }
+
+      span .logotitle {
+        font: Arial Black;
+      }
+
+      @media (max-width: 575.98px) {
+        .navbar-custom {
+          background-color: #001e3d;
+        }
+      }
+
+      .social-icons .fa-facebook-f:hover {
+        color: rgb(51, 69, 168);
+      }
+
+      .social-icons .fa-youtube:hover {
+        color: red;
+      }
+
+      .social-icons .fa-instagram:hover {
+        color: rgb(230, 6, 118);
+      }
+
+      .custom-shape-divider-bottom-1716038433 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .custom-shape-divider-bottom-1716038433 svg {
+        position: relative;
+        display: block;
+        width: calc(300% + 1.3px);
+        height: 76px;
+      }
+
+      .custom-shape-divider-bottom-1716038433 .shape-fill {
+        fill: #ffffff;
+      }
+
+      .logo-title {
+        font-family: Medium-font;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .about-section {
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .about-section .left-part,
+      .about-section .right-part {
+        flex: 1;
+        padding: 20px;
+      }
+      .about-section .left-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .about-section .right-part img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .about-title {
+        font-family: Medium-font;
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .about-title::after {
+        font-family: Medium-font;
+
+        content: "";
+        width: 50px;
+        height: 4px;
+        background: #007bff;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+      .about-content {
+        font-size: 1.2rem;
+      }
+
+      p {
+        text-align: justify;
+        font-family: Regular-font;
+        font-size: 20px;
+      }
+
+      .malapascua-img {
+        border-radius: 8px;
+      }
+
+      .malapascua-img:hover, .lastboatimage:hover {
+  border-radius: 8px;
+  transform: scale(1.02);
+  transition: transform 0.6s ease-in-out;
+}
+
+
+      .showbiztxt {
+        color: white;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .text-custom:hover {
+        color: #007bff;
+        transition: color 0.3s ease;
+      }
+
+      .t2d-img {
+        border-radius: 5px;
+      }
+
+      .t2d-img:hover {
+        filter: brightness(60%);
+        transition: filter 0.3s ease;
+      }
+
+      .custom-shape-divider-top-1716048623 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .custom-shape-divider-top-1716048623 svg {
+        position: relative;
+        display: block;
+        width: calc(300% + 1.3px);
+        height: 79px;
+      }
+
+      .custom-shape-divider-top-1716048623 .shape-fill {
+        fill: #ffffff;
+      }
+
+      .fontdesign {
+        font-family: Medium-font;
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+
+      .fontdesign::before,
+      .fontdesign::after {
+        content: "";
+        flex: 1;
+        border-bottom: 3px solid #007bff;
+        margin: 0 10px;
+      }
+
+      .offers-txt {
+        font: Medium-font;
+        font-size: 32px;
+        color: white;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .img-scale:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+
+      .about-us-section {
+        background-color: #001e3d;
+        color: rgb(51, 69, 168);
+        padding: 2rem 0;
+      }
+
+      .about-us-section h2,
+      .about-us-section h3 {
+        color: rgb(51, 69, 168);
+      }
+
+      .about-us-section p,
+      .about-us-section ul,
+      .about-us-section li {
+        color: rgb(51, 69, 168);
+      }
+
+      footer {
+        background-color: #001e3d;
+        color: white;
+      }
+
+      #services {
+        padding: 80px 0;
+      }
+
+      .services {
+        padding: 20px;
+        
+      }
+      .services h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: Medium-font, sans-serif;
+    color: rgb(247, 247, 247);
+}
+
+      .title1::before {
+        
+        content: "";
+        background: #1d5bcc;
+        height: 5px; /* Corrected */
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(63px);
+      }
+      #services .btn-primary {
+        font-family: Medium-font, sans-serif;
+        color: white;
+
+        box-shadow: none;
+        padding: 8px 25px;
+        border: none;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #2562b7, #3c3869);
+      }
+      .about-title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 8%;
+        
+      }
+
+      .user-details{
+        font-weight: bold;
+        font-family: Title-font;
+
+      }
+
+      #testimonial {
+        margin: 100px 0;
+      }
+      .testimonials {
+        
+        border: 0px solid #1d5bcc;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: 0 5px 10px rgba(35, 15, 218, 0.2);
+      }
+
+      .user-details {
+        font-family: Title-font, sans-serif;
+
+        font-size: 25px;
+        text-align: center;
+      }
+      
+
+      .lastboatimage {
+        border-radius: 8px;
+      }
+      #social-media {
+        background: rgb(78, 73, 135);
+        padding: 100px 0;
+      }
+      #social-media p {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .social-icons img {
+        width: 60px;
+        transition: 0.5s;
+      }
+      .social-icons a:hover img {
+        transform: translateY(-10px);
+      }
+      hr {
+        background-color: #5a5ed9;
+      }
+      .BOATSPADDING {
+        padding-top: 25px;
+        font-family: Medium-font;
+
+      }
+
+      
+.gallery-bg-section{
+            background-image: url('images/gallerybg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h4{
+        font-family: Medium-font;
+        }
+
+         /*----------------FOOTER--------------*/
+
+      body {
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+      }
+      .footer {
+        background-color: #174677;
+        padding: 70px 0;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col h4 {
+        font-size: 18px;
+        font-family: Regular-font;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: Regular-font;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+      }
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a {
+        padding-top: 10;
+
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+
+      /*responsive*/
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 574px) {
+        .footer-col {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <div class="row w-100">
+          <div
+            class="col-12 d-flex justify-content-between align-items-center navbar-upper py-2"
+          >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex align-items-center">
+              <img
+                src="images/mtd-logo.png"
+                style="width: 120px; height: 120px"
+              />
+              <span class="ms-2 text-white fs-4"
+                ><div class="logo-title">
+                  MALAPASCUA THRESHER DIVESHOP
+                </div></span
+              >
+            </div>
+            <div class="partner-logos d-none d-lg-flex">
+              <a href="https://www.divessi.com/en/divecenter/763217"
+                ><img src="images/partnership.png" class="me-2 img-scale"
+              /></a>
+              <a
+                href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"
+                ><img src="images/partnership2.png" class="img-scale"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-12 navbar-lower">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="color: #ffc107;">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="AboutMTD.html"
+                          >About MTD</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="personnel.html"
+                          >Personnels</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ProductsServices.html">Products & Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="News.html">News & Events</a>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                  <a href="Contact.html" class="btn contact-us-btn me-2" type="button">Contact Us</a>
+                  <div class="social-icons">
+                    <a href="https://www.facebook.com/MTDpurelocal" class="me-2"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/mtddiveshop/"
+                      class="me-2"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="https://www.youtube.com/@jestondayday63"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner-section">
+    <img src="images/3.png" alt="">     
+      <div class="banner-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="banner-content text-center">
+              <h2>
+                <br/><br/>OUR STORY AND HISTORY
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="custom-shape-divider-bottom-1716038433">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="about-title position-relative">MTD Diveshop&nbsp;<a href=""><img src="images/MTD-SHOP-ICON.png" /></a></h2>
+            <p class="about-content text-justify">
+             <br>We are located on 
+              <strong>Malapascua Island Logon Daanbantayan Cebu</strong>, just off the north tip of Cebu in the Philippines, located near the western end of this picture-perfect white sand beach.
+
+
+              <br /><br />
+              We like to keep things small so that your dive experience is as personalized as possible. You won’t be just one insignificant diver among many. We keep groups as small as we can, usually only 4 per group. 
+            </p>
+           
+          </div>
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="images/LOCATION.jpg" class="img-fluid malapascua-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-black gallery-bg-section">
+    <section id="services">
+      <div class="container text-center">
+        <h1 class="title1" style="color: white;">Why Choose Us?</h1>
+        <div class="row text-center">
+          <div class="col-md-4 services">
+            <img src="images/10.jpg" class="img-fluid malapascua-img" />
+            <h4>
+              FUN TIME
+            </h4>
+            <p style="color: rgb(224, 223, 223); font-family: Regular-font;">
+              At MTD Diveshop, our valued customers are our top priority. We strive to
+              ensure that your vacation in Malapascua is nothing short of
+              spectacular! We're passionate about diving and eager to showcase
+              the best of what we offer. Our team, from owners to boat staff,
+              shares this passion, creating a vibrant and enjoyable atmosphere.
+              With laughter and camaraderie, we make every dive excursion a
+              fun-filled experience.
+            </p>
+
+          </div>
+          <div class="col-md-4 services">
+            <img
+              src="images/EXPERIENCEMORE.jpg"
+              class="img-fluid malapascua-img"
+            />
+            <h4>EXPERIENCE MORE</a>
+            </h4>
+            </h4></h4>
+            <p style="color: rgb(224, 223, 223); font-family: Regular-font;">
+              Dive into the extraordinary with our experienced team. With over
+              15 years of diving in Malapascua, we bring unparalleled knowledge
+              of the dive sites. Our expert guides ensure you make the most of
+              every dive, uncovering hidden wonders and unforgettable moments
+              beneath the waves. There are, quite simply, no dive shop owners or
+              managers on Malapascua that have spent as much time on the island
+              as our team at MTD Diveshop.
+            </p>
+
+          </div>
+          <div class="col-md-4 services">
+            <img src="images/DIVING.jpg" class="img-fluid malapascua-img" />
+            <h4>DIVING VENTURE</h4>
+            <p style="color: rgb(224, 223, 223); font-family: Regular-font;">
+
+              Dive effortlessly with MTD Diveshop. Upon arrival, simply unpack your gear,
+              and we'll take care of the rest. From setting up equipment to
+              assisting with scuba units, our dedicated staff ensures a seamless
+              experience. After your dive, leave the heavy lifting to us—we'll
+              transport and rinse your gear, allowing you to relax and enjoy
+              your holiday to the fullest. We will also rinse your kit at the
+              end of the day if you wish.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>1
+  <br><br>
+    <section id="CustomerReviews">
+      <div class="container">
+        <h1 class="title1 text-center"  style="font-family: Regular-font;">What Makes Us Special</h1>
+        <div class="row">
+          <div class="col-md-6 testimonials">
+            <p class="user-details">
+              Dive Center<br />
+            </p>
+    
+            <img src="images/DIVECENTER.jpg" class="img-fluid lastboatimage" />
+    
+            <p class="BOATSPADDING" style="font-family: Regular-font;">
+
+              Experience the exceptional at MTD Diveshop's Dive Center. Our dedication to excellence ensures your diving journey is unparalleled. Dive into a world of adventure and discovery as you explore the vibrant underwater ecosystem with us. Whether you're a novice or an experienced diver, our professional instructors are here to guide you every step of the way. Join us and create memories that will last a lifetime.
+            </p>
+          </div>
+          <div class="col-md-6 testimonials">
+            <p class="user-details"         font-family: Medium-font;>
+              Family atmosphere<br />
+            </p>
+    
+            <img src="images/FAMILY-ATMOS.jpg" class="img-fluid lastboatimage" />
+    
+            <p class="BOATSPADDING" style="font-family: Regular-font;">
+              Feel the warmth of a family atmosphere at MTD Diveshop. Immerse yourself in a welcoming environment where every diver is treated like family. Join us for unforgettable experiences and create lasting memories together. Our team is dedicated to ensuring that every moment you spend with us is filled with joy and laughter. Come and be a part of our extended diving family today.
+            </p>
+          </div>
+          <div class="col-md-6 testimonials">
+            <p class="user-details"         font-family: Medium-font;>
+              Top Quality Boats<br />
+            </p>
+    
+            <img src="images/QUALITY-BOAT.jpg" class="img-fluid lastboatimage" />
+    
+            <p class="BOATSPADDING"  style="font-family: Regular-font;">
+              Dive with confidence aboard MTD Diveshop's top quality boats. Embark on journeys of exploration and excitement knowing that our vessels are equipped with the latest technology and maintained to the highest standards. Our commitment to safety and comfort ensures that you can focus on enjoying your dive experiences to the fullest. Join us and let our boats be your gateway to unforgettable underwater adventures.
+            </p>
+          </div>
+          <div class="col-md-6 testimonials">
+            <p class="user-details"         font-family: Medium-font;>
+              Our Boat Crew<br />
+            </p>
+    
+            <img src="images/DIVER-CREW2.jpg" class="img-fluid lastboatimage" />
+    
+            <p class="BOATSPADDING"  style="font-family: Regular-font;">
+              Meet the dedicated boat crew at MTD Diveshop, committed to ensuring your safety and enjoyment on every dive. With years of experience and a passion for the ocean, our crew members are here to make your diving experience unforgettable. From briefing you on dive sites to assisting you with your gear, our team goes above and beyond to ensure that every aspect of your dive trip is seamless and enjoyable. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;company</h4>
+            <a class="navbar-brand" href="#">
+              <img src="images/mtd-logo.png" alt="CNN Logo" width="150" />
+            </a>
+            <br /><br /><br />
+            <a
+              class="navbar-brand"
+              href="https://www.divessi.com/en/divecenter/763217"
+            >
+              <img src="images/partnership.png" alt="CNN Logo" width="150" />
+            </a>
+            <br /><br /><br />
+            <a
+              class="navbar-brand"
+              href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"
+            >
+              <img src="images/partnership2.png" alt="CNN Logo" width="150" />
+            </a>
+          </div>
+          <div class="footer-col">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;About MTD</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Sponsor</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Personnel</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Products & Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/MTDpurelocal"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/mtddiveshop/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/@jestondayday63"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </footer>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar-custom");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

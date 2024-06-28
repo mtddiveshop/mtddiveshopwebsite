@@ -1,0 +1,831 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnels- Malapascua Thresher Diving</title>
+    <link rel="shortcut icon" type="x-icon" href="images/mtd-logo.png">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1b0d08e2-1e7d-4ea2-9492-e3f0c4e38cdf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <style>
+        @font-face {
+        font-family: Medium-font;
+        src: url(fonts/Poppins-Medium.ttf);
+    }
+    @font-face {
+        font-family: Regelar-font;
+        src: url(fonts/Poppins-Regular.ttf);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Medium-font, sans-serif;
+        background-color: #ffffff;
+    }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #team {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 50px 50px;
+        }
+
+        .heading {
+            font-size: 2.5rem;
+            color: #100303;
+            font-weight: 500;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .box .details img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 15px;
+        }
+
+        .box .details h4 {
+            margin: 10px 0 5px;
+            text-align: center;
+        }
+
+        .box .details p {
+            font-size: 20px;
+            color: #7a7a7a;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn a {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            font-size: 22px;
+            line-height: 45px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn a:hover {
+            color: #fff;
+            background-color: #010b08fa;
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                width: 90%;
+                margin: 10px;
+            }
+        }
+
+        @font-face {
+            font-family: Medium-font;
+            src: url(fonts/Poppins-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Regular-font;
+            src: url(fonts/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Title-font;
+            src: url(fonts/Poppins-ME.ttf);
+        }
+
+        .navbar-custom {
+            background-color: transparent;
+            transition: background-color 0.4s;
+        }
+        .navbar-custom.scrolled {
+            background-color: #001e3d;
+        }
+        .content-section {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0;
+        }
+        .content-content {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .content-content h2 {
+            font-size: 48px;
+            font-family: Arial Black;
+        }
+
+        .content-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .banner-section {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0;
+        }
+        .banner-content {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .banner-content h2 {
+            font-size: 45px;
+            font-family: Arial Black;
+        }
+        .banner-section img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+        }
+
+        .navbar-lower {
+            margin-bottom: 20px; /* Adjust the margin bottom as needed */
+        }   
+        .navbar-upper, .navbar-lower {
+            background-color: transparent;
+        }
+        .navbar-upper .container, .navbar-lower .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-upper img {
+            height: 50px;
+        }
+        .navbar-upper .partner-logos img {
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .navbar-lower .navbar-nav .nav-link {
+            color: #fff;
+            font-family: Regular-font;
+        }
+        .navbar-lower .contact-us-btn {
+            background-color: transparent;
+            border: solid 2px white;
+            color: white;
+            margin-right: 130px ;
+        }
+        .navbar-lower .social-icons a {
+            color: #fff;
+            margin-left: 10px;
+        }    
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 ;
+        }
+        
+        .contact-us-btn:hover {
+            background-color: #ffffff; 
+            border-color: #ffffff; 
+            color: black;
+            font-family: Regular-font;
+        }
+
+        .inquire-now-btn{
+            margin-top: 20px;
+            background-color: transparent; 
+            border-color: #ffffff; 
+            color: rgb(255, 255, 255);
+            font: Regular-font;
+        }
+
+        .inquire-now-btn:hover {
+            background-color: #ffffff; 
+            border-color: #ffffff; 
+            color: black;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px; /* Adjust the font size as needed */
+            margin-right: 20px;
+        }
+        
+        .social-icons a i {
+            font-size: 20px; /* Adjust the icon size as needed */
+        }
+
+        .navbar-upper, .navbar-lower {
+            margin-top: 20px; /* Increase the margin between upper and lower nav */
+        }
+        
+
+        span .logotitle{
+            font: Arial Black;
+        }
+
+        @media (max-width: 575.98px) {
+            .navbar-custom {
+                background-color: #001e3d; 
+            }
+        }
+
+        .social-icons .fa-facebook-f:hover{
+            color:rgb(51, 69, 168);
+        }
+
+        .social-icons .fa-youtube:hover{
+            color:red;
+        }
+
+        .social-icons .fa-instagram:hover{
+            color:rgb(230, 6, 118);
+        }
+        .tooltip-container {
+            position: relative;
+        }
+
+        .tooltip-text {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            color: #000;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            width: 300px; 
+            font-size: 14px; 
+            text-align: justify;
+        }
+
+        .fontdesign{
+            font-family: Regular-font;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .fontdesign::before,
+        .fontdesign::after {
+            content: "";
+            flex: 1;
+            border-bottom: 3px solid #007bff; 
+            margin: 0 10px; 
+        }
+
+
+        .tooltip-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+            color: #000;
+            outline: none;
+        }
+        .custom-shape-divider-bottom-1716308568 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716308568 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1716308568 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.logo-title{
+            font-family: Medium-font; 
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px
+}
+
+.img-scale:hover{
+            transform: scale(1.1); 
+            transition: transform 0.3s ease; 
+        }
+
+body {
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+      }
+      .footer {
+        background-color: #174677;
+        padding: 70px 0;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+      }
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a {
+        padding-top: 10;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+
+      /*responsive*/
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 574px) {
+        .footer-col {
+          width: 100%;
+        }
+      }
+
+.active-nav-link {
+            color: #ffc107 !important;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-12 d-flex justify-content-between align-items-center navbar-upper py-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex align-items-center">
+                        <img src="images/mtd-logo.png" STYLE="width: 120px; height: 120px;">
+                        <span class="ms-2 text-white fs-4"><div class="logo-title" style="font-family: Regular-font;">MALAPASCUA THRESHER DIVESHOP</div></span>
+                    </div>
+                    <div class="partner-logos d-none d-lg-flex"> 
+                        <a href="https://www.divessi.com/en/divecenter/763217"><img src="images/partnership.png" class="me-2 img-scale"></a>
+                        <a href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"><img src="images/partnership2.png" class="img-scale"></a>
+                    </div>
+                </div>
+     
+                <div class="col-12 navbar-lower">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html" style="font-family: Regular-font;">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffc107;">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="AboutMTD.html" >About MTD</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html" style="font-family: Regular-font;">Personnels</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ProductsServices.html" style="font-family: Regular-font;">Products & Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Reviews.html" style="font-family: Regular-font;">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="News.html" style="font-family: Regular-font;">News & Events</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                                <a href="Contact.html" class="btn contact-us-btn me-2" type="button">Contact Us</a>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/MTDpurelocal" class="me-2"><i class="fab fa-facebook-f"></i></a> 
+                                    <a href="https://www.instagram.com/mtddiveshop/" class="me-2"><i class="fab fa-instagram"></i></a> 
+                                    <a href="https://www.youtube.com/@jestondayday63"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="banner-section">
+        <img src="images/personnelbg.png">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-content text-center">
+                        <h2><br><br><br>GET TO KNOW OUR TEAM</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="custom-shape-divider-bottom-1716308568">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <body>
+        <section id="team">
+            <h1 class="heading"><strong style="font-family: Regular-font;">FOUNDERS</strong></h1>
+            <div class="container">
+                <div class="box">
+                    <div class="details">
+                        <img src="images/dayday1.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Josenilo Dayday</h4>
+                        <p style="font-family: Regular-font;">Founder</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/josenilo.dayday.5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">Josenilo Dayday is the founder of Malapascua Thresher Diveshop, with a passion for marine life and diving.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <img src="images/dayday3.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Jeston Dayday</h4>
+                        <p style="font-family: Regular-font;">Co-Founder</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/jeston.gulfan"><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jestongulfan/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">As the co-founder of Malapascua Thresher Diveshop, Jeston Dayday brings his love for the ocean and years of diving expertise to the table, ensuring every dive is an unforgettable adventure.</p>
+                    </div>
+                </div>
+            </div>     
+            <h1 class="heading"><strong style="font-family: Regular-font;">OFFICERS</strong></h1>
+            <div class="container">
+                <div class="box">
+                    <div class="details">
+                        <img src="images/manatad.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Maurengie Manatad</h4>
+                        <p style="font-family: Regular-font;">Officer</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/profile.php?id=100007389886639"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/maureen18_05/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">Maurengie Manatad
+                            With a keen eye for detail and a passion for customer satisfaction, Maurengie Manatad ensures that every aspect of your dive experience with Malapascua Thresher Diveshop is seamless and enjoyable.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <img src="images/yangan.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Ginalyn Yangan</h4>
+                        <p style="font-family: Regular-font;">Officer</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/ginalyn.yangan.35"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jheannah08/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">Ginalyn Yangan, with her organizational skills and dedication, keeps the operations of Malapascua Thresher Diveshop running smoothly, ensuring that all guests have a safe and enjoyable diving experience.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <img src="images/dayday2.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Jeves Dayday</h4>
+                        <p style="font-family: Regular-font;">Officer</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/jeves.dayday.7"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/jeves_d"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ajev_lang2/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">Jeves Dayday brings his enthusiasm for diving and customer service to his role at Malapascua Thresher Diveshop, ensuring that every guest feels welcomed and well taken care of throughout their dive journey.</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="heading"><strong style="font-family: Regular-font;">STAFFS</strong></h1>
+            <div class="container">
+                <div class="box">
+                    <div class="details">
+                        <img src="images/dayday4.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Cyrene Pagbunocan</h4>
+                        <p style="font-family: Regular-font;">Staff</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/cian.faye.7"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/uryoungcyce/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">With a friendly smile and a passion for underwater exploration, Cyrene Pagbunocan assists guests at Malapascua Thresher Diveshop, making sure they have everything they need for an amazing dive experience.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <img src="images/ramilo.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Ramilo Belangigue</h4>
+                        <p style="font-family: Regular-font;">Staff</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/jayr.belengigue"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/its_malapascuafreak/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">Ramilo Bilangigue's attention to detail and dedication to safety make him an invaluable member of the Malapascua Thresher Diveshop team, ensuring that every dive is conducted with precision and care.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <img src="images/ofamen.jpg" alt="">
+                        <h4 style="font-family: Regular-font;">Armel Ofamen</h4>
+                        <p style="font-family: Regular-font;">Staff</p>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/armel.ofamen.16"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ofamenarmel/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="tooltip-container">
+                        <button class="tooltip-btn" style="font-family: Regular-font;">View Description</button>
+                        <p class="tooltip-text" style="font-family: Regular-font;">Armel Ofamen's enthusiasm for diving and willingness to assist ensure that guests at Malapascua Thresher Diveshop have a memorable and enjoyable experience both above and below the surface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('.nav-link');
+    
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        // Remove active class from all nav links
+                        navLinks.forEach(l => l.classList.remove('active-nav-link'));
+                        // Add active class to the clicked nav link
+                        link.classList.add('active-nav-link');
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const tooltipBtns = document.querySelectorAll('.tooltip-btn');
+        
+                tooltipBtns.forEach(btn => {
+                    const tooltipText = btn.nextElementSibling;
+        
+                    btn.addEventListener('mouseover', function() {
+                        tooltipText.style.display = 'block';
+                    });
+        
+                    btn.addEventListener('mouseout', function() {
+                        tooltipText.style.display = 'none';
+                    });
+                });
+            });
+        </script>
+        
+        
+      
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+    
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;company</h4>
+              <a class="navbar-brand" href="#">
+                <img src="images/mtd-logo.png" alt="CNN Logo" width="150" />
+              </a>
+              <br /><br /><br />
+              <a
+                class="navbar-brand"
+                href="https://www.divessi.com/en/divecenter/763217"
+              >
+                <img src="images/partnership.png" alt="CNN Logo" width="150" />
+              </a>
+              <br /><br /><br />
+              <a
+                class="navbar-brand"
+                href="https://www.tripadvisor.com/Attraction_Review-g659555-d18915511-Reviews-Malapascua_Thresher_Divers-Malapascua_Island_Cebu_Island_Visayas.html"
+              >
+                <img src="images/partnership2.png" alt="CNN Logo" width="150" />
+              </a>
+            </div>
+            <div class="footer-col">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;About MTD</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Personnel</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Products & Services</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/MTDpurelocal"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/mtddiveshop/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@jestondayday63"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </footer>
+
+</body>
+</html>
+</body>
+
+</html>

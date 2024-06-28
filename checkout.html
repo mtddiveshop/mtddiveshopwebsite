@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/mtd-logo.png">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+        @font-face {
+            font-family: Medium-font;
+            src: url(fonts/Poppins-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Regular-font;
+            src: url(fonts/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Title-font;
+            src: url(fonts/Poppins-Bold.ttf)
+        }
+
+        body {
+            background: url('images/checkoutbg.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .checkout-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-title {
+            font-family: Medium-font;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .about-title::after {
+            content: '';
+            width: 70px;
+            height: 4px;
+            background: #007bff; 
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .checkout-header {
+            margin-bottom: 30px;
+            font-family: Title-font;
+        }
+        .checkout-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .checkout-item h5, .checkout-item p {
+            font-family: Regular-font;
+            margin: 0;
+        }
+        .checkout-summary {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .environmental-fee {
+            color: #d9534f;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .fontdesign{
+            font-family: Medium-font;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .fontdesign::before,
+        .fontdesign::after{
+            content: "";
+            flex: 1;
+            border-bottom: 3px solid #007bff; 
+            margin: 0 10px; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container checkout-container">
+        
+        <h2 class="text-center checkout-header fontdesign">Your Cart</h2>
+        <div id="checkout-items"></div>
+        <div class="checkout-summary">
+            <div class="checkout-item">
+                <h5>Environmental Fee</h5>
+                <p class="environmental-fee">₱50</p>
+            </div>
+            <div class="checkout-item">
+                <h5>Total</h5>
+                <p id="total-price">₱0</p>
+            </div>
+        </div>
+        <h3 class="text-center mt-4 fontdesign">Payment Details</h3>
+        <form id="payment-details-form">
+            <div class="form-group">
+                <label for="first-name">First Name </label>
+                <input type="text" class="form-control" id="first-name" required placeholder="Enter your last name (e.g., Pedro)">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" id="last-name" required placeholder="Enter your last name (e.g., Juan)" >
+            </div>
+            <div class="form-group">
+                <label for="contact-number">Contact No. (11 Digits)</label>
+                <input type="text" class="form-control" id="contact-number" required maxlength="11" placeholder="Enter Contact No.">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required placeholder="Enter your email (e.g., luizruas@gmail.com)">
+            </div>
+            <div class="form-group">
+                <label for="credit-card-number">Credit Card Number <a href=""><img src="images/iconvisa.png"></a>&nbsp;<a href=""><img src="images/mscard.png"></a></label>
+                <input type="text" class="form-control" id="credit-card-number" maxlength="16"required placeholder="Enter your Credit Card Number">
+            </div>
+            <button type="button" class="btn btn-primary btn-block mt-4" onclick="finalizeCheckout()">Submit Payment</button>
+        </form>
+    </div>
+    
+    <script>
+    function displayCartItems() {
+        const checkoutItemsContainer = document.getElementById('checkout-items');
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        let totalPrice = 0;
+
+        if (cartItems.length === 0) {
+            checkoutItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+            return;
+        }
+
+        cartItems.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.className = 'checkout-item';
+            itemElement.innerHTML = `
+                <h5>${item.name}</h5>
+                <p>₱${item.price}</p>
+            `;
+            checkoutItemsContainer.appendChild(itemElement);
+
+            totalPrice += parseFloat(item.price);
+        });
+
+        // Add Environmental Fee
+        totalPrice += 50;
+
+        // Display total price
+        document.getElementById('total-price').textContent = `₱${totalPrice.toFixed(2)}`;
+    }
+
+    function finalizeCheckout() {
+        const form = document.getElementById('payment-details-form');
+        if (form.checkValidity()) {
+            const confirmation = confirm('Are you sure you want to proceed to payment?');
+            if (confirmation) {
+                // Redirect to a confirmation page
+                window.location.href = 'confirmation.html';
+            }
+        } else {
+            form.reportValidity();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', displayCartItems);
+    </script>
+</body>
+</html>
